@@ -739,8 +739,23 @@ textarea[placeholder] {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   margin: 0; }
+.burger__item{
+  list-style-type: none;
+}
+ .burger{
+    list-style-type: none;
+    padding-left: 150px;
+    display: none;
+ }
 
 @media (max-width: 575.98px) {
+  .burger{
+    display: block;
+    list-style-type: none;
+  }
+.burger__item{
+  list-style-type: none;
+}
   .menu-nav-list {
     display: none; }
   .web__title {
@@ -865,6 +880,14 @@ textarea[placeholder] {
     width: 100%; } }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
+    .burger{
+    display: block;
+    list-style-type: none;
+  }
+.burger__item{
+  list-style-type: none;
+}
+
   .menu-nav-list {
     display: none; }
   .web__title {
