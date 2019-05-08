@@ -20,20 +20,22 @@
 		<div class="menu-logo">
 			<img src="dist/img/logo.jpg">
 		</div>
-		<nav class="navbar navbar-expand-lg burger">
-      <li class="nav-item dropdown burger__item">
-        <a class="nav-link dropdown-toggle" href="history.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="text-transform: uppercase;" >
-        	меню
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="res.html">Home</a>
-          <a class="dropdown-item" href="test.html">About</a>
-          <a class="dropdown-item" href="ing.html">Servicing</a>
-          <a class="dropdown-item" href="Gamedev .html">Blog</a>
-          <a class="dropdown-item" href="mobile.html">Contact us</a>
-        </div>
-</nav>
-		<nav class="menu-nav">
+
+		<div class="nav">
+  <span id="trigger" class="trigger">
+  <i></i>
+  <i></i>
+  <i></i>
+</span>
+<ul id="menu" class="menu">
+	<li><a href="">Home</a></li>
+	<li><a href="">About</a></li>
+	<li><a href="">About</a></li>
+	<li><a href="">Servicing</a></li>
+	<li><a href="">Portfolio</a></li>
+	<li><a href="">Contact</a></li>
+  </ul>
+</div>
 			<ul class="menu-nav-list">
 				<li> <a href="/" class="menu-nav__linck">Home</a></li>
 				<li><a href="/" class="menu-nav__linck">About</a></li>
@@ -476,8 +478,10 @@
 			<p class="contact__desk"><span><i class="fa fa-envelope-o"></i></span>quickmasud@gmail.com<span>quickmasud@yahoo.com</span></p>
 		</div>
 		<form action="">
+			<div class="inp">
 			<input type="text" name="name" placeholder="Your NAME">
 			<input type="email" name="email" placeholder="Your Email">
+			</div>
 			<textarea placeholder="Write Massage"></textarea>
 			<input type="submit" name="отправить" value="send">
 		</form>
@@ -502,6 +506,15 @@
 				arrows:false,
 		});
 		});
+</script>
+<script >
+	document.getElementById("trigger").onclick = function() {
+  open()
+};
+
+function open() {
+  document.getElementById("menu").classList.toggle("show");
+}
 </script>
 </body>
 </html>
