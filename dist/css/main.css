@@ -704,23 +704,24 @@ span.dolar {
 * {
   outline: none; }
 
-input{
-  width: 44%;
-  display: inline-block;
+input {
+  flex-basis: 44%;
+  display: block;
   height: 65px;
   border-radius: 10px;
-  border: none;
-  margin-bottom: 40px;
-  margin-top: 40px; }
-
+  border: none; }
+.inp{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
 input[placeholder] {
   padding-left: 20px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   font-size: 20px; }
 
-input[type="email"] {
-  margin-left: 107px; }
 
 input[type="submit"] {
   margin: 0 auto;
@@ -764,6 +765,39 @@ textarea[placeholder] {
     padding-left: 150px;
     display: none;
  }
+div.nav{
+  display: none;
+}
+@media (max-width:767.98px) {
+  .menu {
+    display: none;
+  }
+  div.nav{
+  display: flex;
+   padding-left: 200px;
+}
+div.nav ul {
+  list-style-type: none;
+}
+div.nav ul li a{
+  text-decoration: none;
+  color: #000;
+}
+  .trigger {
+    display: inline-block;
+    margin: 3px;
+    cursor: pointer;
+  }
+  .trigger i {
+    display: block;
+    width: 30px;
+    height: 6px;
+    margin: 4px auto;
+    background: #222;
+  }
+  .show {
+    display: block;
+  }
 
 @media (max-width: 575.98px) {
   .burger{
